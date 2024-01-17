@@ -1,0 +1,75 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+
+    overflow: hidden;
+    background-color: blue;
+
+}
+
+.lamp-item{
+    position: absolute;
+    right: 0;
+    left: 0;
+    margin: auto;
+}
+
+.lamp-top{
+    top: 0;
+    width: 5px;
+    height: 100px;
+    background-color: white;
+    border: solid black 2px;
+    pointer-events: none;
+}
+
+.lamp-mid{
+    top: 100px;
+    width: 55px;
+    height: 30px;
+    border-radius: 200px 200px 100px 100px;
+    background-color: white;
+    border: solid black 2px;
+    cursor:pointer;
+}
+
+.lamp-bottom{
+    top: 120px;
+    width: 150px;
+    height: 40px;
+    border-radius: 200px 200px 5px 5px;
+    background-color: white;
+    border: solid black 2px;
+    cursor: pointer;
+}
+
+.lamp-light.on{
+    background-color: yellow;
+    top: 164px;
+    height: 55%;
+    width: 232px;
+    clip-path: polygon(0% 100%, 17.5% 0%, 82.5% 0%, 100% 100%);
+    pointer-events: none;
+    animation: fadeIn .3s ease-out;
+}
+
+@keyframes fadeIn{
+    from{
+
+        opacity: 0;
+
+    }
+
+    to{
+
+        opacity: 1;
+
+    }
+}
+
+.lamp-light.off{
+    display: none;
+}
