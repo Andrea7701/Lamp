@@ -6,7 +6,7 @@ A lamp project build in javascript and css
 
 
 # Live Deployment
-https://andrea7701.github.io/Calculator/
+
 
 # Built With 
  - Javascript;
